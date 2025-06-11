@@ -11,7 +11,6 @@ def process_excel(file_path):
         df.columns = df.columns.str.strip().str.replace('\n', ' ').str.title()  # cleans the column names
         df.dropna(how='all', inplace=True)  # removes empty rows
 
-        # Safe fill for missing values by dtype
         for col in df.columns:
             if df[col].dtype == 'O':
                 df[col].fillna("Missing", inplace=True)
@@ -28,7 +27,6 @@ def process_excel(file_path):
         output_path = file_path.replace(".xlsx", "_CLEANED.xlsx")
         df.to_excel(output_path, index=False)
 
-        # Open the saved file for formatting
         wb = load_workbook(output_path)
         ws = wb.active
 
@@ -37,7 +35,6 @@ def process_excel(file_path):
             cell.font = Font(bold=True)
             cell.alignment = Alignment(horizontal="center")
 
-        # Auto-adjust column widths
         for col_cells in ws.columns:
             max_len = max(len(str(cell.value)) for cell in col_cells)
             ws.column_dimensions[col_cells[0].column_letter].width = max_len + 2
