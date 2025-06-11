@@ -10,12 +10,12 @@ If you upload this:
 
 | Name         | Address                                     | Lead Level |
 |--------------|---------------------------------------------|------------|
-| John Doe     | 123 Main St, Baltimore, MD 21201            | 4.2        |
+| Jack the Ripper     | 100 N Holliday St, Baltimore, MD            | 4.2        |
 
 You’ll get this:
 
 | Name         | Address                   | Lead Level | Lead Flag | Street Address | City      | State | Zip Code (from Address) |
 |--------------|---------------------------|------------|-----------|----------------|-----------|-------|--------------------------|
-| John Doe     | 123 Main St, Baltimore... | 4.2        | High      | 123 Main St    | Baltimore | MD    | 21201                   |
+| Jack the Ripper     | 100 N Holliday St, Baltimore, MD | 4.2        | High      | 100 N Holliday St    | Baltimore | MD    | 21202                   |
 
 And the `"Lead Level"` and `"Lead Flag"` cells will be highlighted in **red**.
