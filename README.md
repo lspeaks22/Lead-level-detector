@@ -18,4 +18,4 @@ You’ll get this:
 |--------------|---------------------------|------------|-----------|----------------|-----------|-------|--------------------------|
 | Jack the Ripper     | 100 N Holliday St, Baltimore, MD | 4.2        | High      | 100 N Holliday St    | Baltimore | MD    | 21202                   |
 
-And the `Lead Level` and `Lead Flag` cells will be highlighted in **red**.
+And the Lead Level and Lead Flag cells will be highlighted in **red**.
