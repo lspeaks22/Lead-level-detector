@@ -1,0 +1,28 @@
+#WHAT YOU WILL NEED 
+
+Python ~ Download from: https://www.python.org/downloads/
+
+In Command Prompt (cmd), make sure pandas openpyxl is installed by bashing pip install openpyxl 
+
+Once installed,
+have your .xlsx file available
+-make sure to have "Lead Level" or "Lead_level" column
+-make sure to have "Address" column
+
+WHAT THIS GUI TOOL DOES: 
+
+Cleans up messy column names
+Removes empty rows
+Fills in missing data: "Missing" for text fields
+-1 for numeric fields
+Adds a "Lead Flag" column that marks values over 3.5 µg/dL as "High"
+Highlights Lead Level and Lead Flag cells in red if flagged as High
+Saves the result as a new file: yourfile_CLEANED.xlsx
+
+HOW TO USE THE CODE
+
+save the script as a .py file
+in cmd, bash the code python "name_of_xlsx_file.py" #example
+click "Select Excel File"
+choose your selected .xlsx file 
+a cleaned version will be saved in the same folder 
