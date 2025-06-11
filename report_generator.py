@@ -8,7 +8,6 @@ def process_excel(file_path):
     try:
         df = pd.read_excel(file_path)  # loads the .xlsx file
 
-        # Clean column names
         df.columns = df.columns.str.strip().str.replace('\n', ' ').str.title()  # cleans the column names
         df.dropna(how='all', inplace=True)  # removes empty rows
 
